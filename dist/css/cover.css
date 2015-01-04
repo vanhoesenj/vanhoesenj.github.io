@@ -116,6 +116,12 @@ body {
   font-weight: bold;
 }
 
+/*
+ * Modal
+ */
+.modal {
+    color: #0a0a0a;
+}
 
 /*
  * Footer
