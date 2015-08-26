@@ -21,7 +21,8 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  margin-bottom: 50px;
+    top: 20;
+    bottom: auto;
 }
 
 /* Declare heights because of positioning of img element */
