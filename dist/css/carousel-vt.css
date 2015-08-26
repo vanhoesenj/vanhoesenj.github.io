@@ -21,7 +21,7 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-    top: 20;
+    top: 5;
     bottom: auto;
 }
 
