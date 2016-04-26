@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Leveraging a GIS and The Emerging GeoWeb',
-    subtitle: 'Towards Improving the Communication of Geologic Mapping Endeavors to Community Stakeholders',
+    title: 'Youre So Vain',
+    subtitle: 'I Bet You Think My Drone Is Watching You',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
