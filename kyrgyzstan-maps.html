@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<style>
+body {
+    margin:0;
+    padding:0;
+}
+#map {
+    position: fixed;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+}
+#features {
+    width: 50%;
+    margin-left: 50%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+section {
+    padding:  80px 50px;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.25;
+    font-size: 13px;
+}
+section.active {
+    opacity: 1;
+}
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 200px;
+}
+/* Control map popup max-width here */
+.mapboxgl-popup {
+    max-width: 600;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.marker-title {
+    font-weight: 700;
+}
+h1{
+  font-size: 26.5px;
+}
+p {
+  font-size:14px ;
+}
+}
+</style>
+
+<div id='map'></div>
+<div id='features'>
+
+
+<section id='Landing' class='active'>
+    	<hr>
+      <center>  <h1>Turning Traditions Intro Markets: <br>2017 MSFS 6060 Study Tour</h1> </center>
+
+<p>Course participants traveled to Kyrgyzstan located in Central Asia, a global hotspot for agricultural biodiversity, and collaboratively tracde and mapped food traditions from their nomadic-pastoral origins to current local food systems with home garden agroecosystems at their foundation. The itinerary included portions of the Silk Road, traditional food production systems, traditional and modern markets (bazaars), and a dramatic landscape dominated by the Tian Shan mountain range.</p>
+
+<p><center><b>Scroll down to follow their journey</b></center></p>
+<center><image src="http://findicons.com/files/icons/2579/iphone_icons/40/arrow_down.png"><center>
+<center><a data-flickr-embed="true"  href="https://www.flickr.com/photos/43782063@N07/35906037434/in/dateposted/" title="H69A8664"><img src="https://farm5.staticflickr.com/4355/35906037434_8b6a236420.jpg" width="500" height="333" alt="H69A8664"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></center>
+</section>
+	
+<section id='Jenn'>
+	<hr>
+
+        <center><h2>Extending the shelf life of perishable goods: <br>Nomadic, semi-nomadic and sedentary perspectives on food preservation in Kyrgyzstan</h2></center>
+        <center><a data-flickr-embed="true"  href="https://www.flickr.com/photos/43782063@N07/36343639530/in/dateposted/" title="JH"><img src="https://farm5.staticflickr.com/4427/36343639530_0aaea101ee.jpg" width="500" height="383" alt="JH"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></center>
+        
+		<center>Click <a href="https://www.arcgis.com/apps/Cascade/index.html?appid=b3ce30e95b8e43449b4f6420ec9f83c4" target="_blank">here</a> to explore this StoryMap created by Jennifer Haplin</center> 
+
+</section>
+	
+	
+<section id='Sean'>
+	    	<hr>
+        <center><h2>Food Production, Processing and Preservation</h2></center>
+        <center><a data-flickr-embed="true"  href="https://www.flickr.com/photos/43782063@N07/36343639320/in/dateposted/" title="SF"><img src="https://farm5.staticflickr.com/4349/36343639320_520d4d5249.jpg" width="500" height="382" alt="SF"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></center>
+		
+
+<p><center>Click <a href="https://uploads.knightlab.com/storymapjs/084f922d187fb5d413e3cd4a2f5fa2c0/kyrgyzstan-food-production-processing-and-preservation/index.html" target="_blank">here</a> to explore this StoryMap created by Sean Flaherty</center> 
+</section>
+
+	
+
+<section id='Micah'>
+<hr>
+        <center><h2>Traveling With Nomadic Kyrgyz</h2></center>
+        <center><a data-flickr-embed="true"  href="https://www.flickr.com/photos/43782063@N07/36343639320/in/dateposted/" title="SF"><img src="https://farm5.staticflickr.com/4349/36343639320_520d4d5249.jpg" width="500" height="382" alt="SF"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></center>
+		
+
+<p><center>Click <a href="https://uploads.knightlab.com/storymapjs/084f922d187fb5d413e3cd4a2f5fa2c0/kyrgyzstan-food-production-processing-and-preservation/index.html" target="_blank">here</a> to explore this StoryMap created by Micah Alden</center> 
+</section>
+	
+	
+ <section id='Colin'>
+ <hr>
+        <center><h2>Soil Fertility Management in Kyrgyzstan</h2></center>
+        <center><a data-flickr-embed="true"  href="https://www.flickr.com/photos/43782063@N07/36343639620/in/dateposted/" title="CM"><img src="https://farm5.staticflickr.com/4436/36343639620_e38551e8a7.jpg" width="500" height="384" alt="CM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></center>
+
+<p><center>Click <a href="http://www.arcgis.com/apps/MapJournal/index.html?appid=be1cff9b7b1a4be78e80d6a505684224" target="_blank">here</a> to explore this StoryMap created by Colin Mahoney</center> 
+
+    </section>
+	
+	
+<section id='Laura'>
+<hr>
+        <center><h2>What We Carry With Us:<br> Pests & Diseases of Food Plants</h2></center>
+        <center><a data-flickr-embed="true"  href="https://www.flickr.com/photos/43782063@N07/35930088753/in/dateposted/" title="LV"><img src="https://farm5.staticflickr.com/4387/35930088753_f2cd3a9c0c.jpg" width="500" height="385" alt="LV"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></center>
+
+<p><center>Click <a href="http://www.arcgis.com/apps/Cascade/index.html?appid=67fbbad90b164165bf852f59be29dc48" target="_blank">here</a> to explore this StoryMap created by Laura Valentine</center> 
+</section>
+	
+<section id='Danica'>
+	<hr>
+        <center><a data-flickr-embed="true"  href="https://www.flickr.com/photos/43782063@N07/36343639590/in/dateposted/" title="DA"><img src="https://farm5.staticflickr.com/4412/36343639590_045c73cb02.jpg" width="500" height="426" alt="DA"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></center>
+
+<p><center>Click <a href="http://www.arcgis.com/apps/MapJournal/index.html?appid=87f227d56df449638cbe3b07c5085cc3" target="_blank">here</a> to explore this StoryMap created by Danica Abejon</center> 
+ </section>
+
+
+<section id='Taryn'>
+	<hr>
+        <center><h2>Food Waste in the Kyrgyz Supply Chain</h2></center>
+        <center><a data-flickr-embed="true"  href="https://www.flickr.com/photos/43782063@N07/35930088493/in/dateposted/" title="TS"><img src="https://farm5.staticflickr.com/4351/35930088493_ff88c04e69.jpg" width="500" height="384" alt="TS"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></center>
+
+<p><center>Click <a href="http://www.arcgis.com/apps/MapJournal/index.html?appid=86f039b045a245b3a4bac0f68d97e402" target="_blank">here</a> to explore this StoryMap created by Taryn Skinner</center> 
+</section>
+ 
+<section id='Ashley'>
+	 <hr>
+        <center><h2>A Brief Overview of Livestock and Their Importance in Kyrgyzstan</h2></center>
+        <center><a data-flickr-embed="true"  href="https://www.flickr.com/photos/43782063@N07/36739618055/in/dateposted/" title="AP"><img src="https://farm5.staticflickr.com/4375/36739618055_8ee68a39ea.jpg" width="500" height="382" alt="AP"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></center>
+
+<p><center>Click <a href="https://uploads.knightlab.com/storymapjs/dffe141a2da7d88ed97acc4bc79cfdd4/study-tour-2017/index.html" target="_blank">here</a> to explore this StoryMap created by Ashley Pierce</center> 
+</section>
+    
+	
+<section> </section>
+
+</div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoidmFuaG9lc2VuaiIsImEiOiIwckRncjBFIn0.7hYBZHtRQqIHgci6eKjU4w';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/outdoors-v10',
+    center: [74.6307234, 41.6892731],
+    zoom: 4,
+    bearing: 15,
+    pitch: 40
+});
+var markers = {
+    "type": "FeatureCollection",
+    "features": [
+    {
+        "type": "Feature",
+        "properties": {
+            "title": "Start",
+            "description": "<div class='marker-title'>Turning Traditions Intro Markets</div> \
+            <p></p> \
+            <iframe width='100%' height='275' scrolling='no' frameborder='no'></iframe>",
+            "marker-symbol": "",
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [74.6307234, 41.6892731]
+        }
+    },
+    
+	{
+        "type": "Feature",
+        "properties": {
+            "title": "Jenn",
+            "description": "<div class='marker-title'>Extending the Shelf Life of Perishable Goods</div> \
+            <iframe width='100%' height='275' scrolling='no' frameborder='no'></iframe>",
+          "marker-symbol": "monument"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [74.5691961, 42.8753517]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "title": "Sean",
+            "description": "<div class='marker-title'>Food Production, Processing and Preservation</div> \
+            <p>Christine Cushing worked in the Jewellery Quarter for 35 years. She remembers how the neighbourhood has changed from an industrial area to a vibrant place to live, work and walk around.</p> \
+            <iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259976604&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe> ",
+            "marker-symbol": "monument"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [73.817324, 42.320053]
+        }
+},
+
+{
+"type": "Feature",
+"properties": {
+"title": "Micah",
+"description": "<div class='marker-title'>Traveling With Nomadic Kyrgyz</div> \
+<p>Listen to Sarah Hayes, exhibitions Manager for the Coffin Works, to know how a victorian factory worked.</p> \
+<iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259196377&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
+"marker-symbol": "monument"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [75.1520984, 41.7773527]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+  "title": "Colin",
+  "description": "<div class='marker-title'>How are the people who live in the Jewellery Quarter?</div> \
+<p>Matthew Bott,resident in the area, tells his thoughts about the diversity of the neighbourhood.</p> \
+  <iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259911088&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
+  "marker-symbol": "monument"
+  },
+  "geometry": {
+  "type": "Point",
+  "coordinates": [75.2909494, 40.8228659]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+  "title": "Laura",
+  "description": "<div class='marker-title'>What We Carry With Us</div> \
+  <p>David Smith, town planner and Jeweller Quarter resident, talks about Great Hampton street main problems and the difficulties to make the street prosperous.</p> \
+  <iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259909423&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
+  "marker-symbol": "monument"
+  },
+  "geometry": {
+  "type": "Point",
+  "coordinates": [76.628765, 42.2133003]
+}
+},
+
+{
+        "type": "Feature",
+        "properties": {
+            "title": "Danica",
+            "description": "<div class='marker-title'>Extending the Shelf Life of Perishable Goods</div> \
+            <p>Matthew Bott is from Birmingham and lives in the Jewellery Quarter since 2007. The privilege to walk to his work place and the special character of the area are his reason to live in the neighbourhood. (Image: Flickr/Roland Turner).</p> \
+            <iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259889010&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
+            "marker-symbol": "monument",
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [77.544818, 42.149648]
+        }
+    },
+
+{
+        "type": "Feature",
+        "properties": {
+            "title": "Taryn",
+            "description": "<div class='marker-title'>Extending the Shelf Life of Perishable Goods</div> \
+            <p>Matthew Bott is from Birmingham and lives in the Jewellery Quarter since 2007. The privilege to walk to his work place and the special character of the area are his reason to live in the neighbourhood. (Image: Flickr/Roland Turner).</p> \
+            <iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259889010&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
+            "marker-symbol": "monument",
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [77.602364, 42.155468]
+        }
+    },
+
+{
+"type": "Feature",
+"properties": {
+"title": "Ashley",
+"description": "<div class='marker-title'>Livestock in Kyrgyzstan</div> \
+<p>What would be the effects of the neighbourhood plan?</p> \
+<iframe width='100%' height='450' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259912999&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
+"marker-symbol": "monument"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [78.377827, 42.510187]
+}
+}]
+};
+
+map.on('style.load', function () {
+    // Add marker data as a new GeoJSON source.
+    map.addSource("markers", {
+        "type": "geojson",
+        "data": markers
+    });
+
+    // Add a layer showing the markers.
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "{marker-symbol}-15",
+            "icon-allow-overlap": true,
+			"icon-size": 1,
+			}
+    });
+});
+
+var chapters = {
+    'Landing': {
+        bearing: 0,
+        center: [0, 0],
+        zoom: 6,
+        pitch: 40
+    },
+    'Jenn': {
+        duration: 8500,
+        center: [74.5691961, 42.8753517],
+        bearing: 57,
+        zoom: 15,
+        pitch: 35
+    },
+    'Sean': {
+        bearing: 10,
+        center: [73.817324, 42.320053],
+        zoom: 10,
+        speed: 0.7,
+        pitch: 0
+    },
+    'Micah': {
+        bearing:10,
+        center: [75.1520984, 41.7773527],
+        speed: 0.4,
+        zoom: 10,
+        pitch:50
+    },
+    'Colin': {
+        bearing: 30,
+        center: [75.2909494, 40.8228659],
+        zoom: 9,
+        pitch: 70,
+        speed: 0.5
+    },
+    'Laura': {
+        bearing: 75,
+        center: [76.6384548, 42.2133003], 
+        zoom: 10,
+        pitch:65,
+        speed: 0.5
+    },
+	    'Danica': {
+        bearing: -35,
+        center: [77.544818, 42.149648],
+        zoom: 12,
+        pitch:20,
+        speed: 0.5
+    },
+	    'Taryn': {
+        bearing: -35,
+        center: [77.602364, 42.155468],
+        zoom: 12,
+        pitch:20,
+        speed: 0.5
+    },
+    'Ashley': {
+        bearing: -90,
+        center: [78.377827, 42.510187],
+        zoom: 10,
+        pitch: 65
+    },
+};
+
+// On every scroll event, check which element is on screen
+window.onscroll = function() {
+    var chapterNames = Object.keys(chapters);
+    for (var i = 0; i < chapterNames.length; i++) {
+        var chapterName = chapterNames[i];
+        if (isElementOnScreen(chapterName)) {
+            setActiveChapter(chapterName);
+            break;
+        }
+    }
+};
+var activeChapterName = 'Landing';
+function setActiveChapter(chapterName) {
+    if (chapterName === activeChapterName) return;
+    map.flyTo(chapters[chapterName]);
+    document.getElementById(chapterName).setAttribute('class', 'active');
+    document.getElementById(activeChapterName).setAttribute('class', '');
+    activeChapterName = chapterName;
+}
+function isElementOnScreen(id) {
+    var element = document.getElementById(id);
+    var bounds = element.getBoundingClientRect();
+    return bounds.top < window.innerHeight && bounds.bottom > 0;
+}
+</script>
+</body>
+</html>
